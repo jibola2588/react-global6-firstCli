@@ -1,0 +1,29 @@
+To get started, follow the steps below:
+
+run npm install on your terminal
+
+then run npm run dev
+
+a link will be generate on your terminal, eg : http://localhost:5173/
+
+ctrl + click on the link and you can preview all on your browser.
+
+
+
+
+for creating a new application follow this steps:
+
+run npm create vite
+
+choose the project name or ./ if it is in that same folder
+
+choose a varaiant either javascript or typescript
+
+then run npm install on your terminal
+
+then run npm run dev
+
+a link will be generate on your terminal, eg : http://localhost:5173/
+
+ctrl + click on the link and you can preview all on your browser.
+
