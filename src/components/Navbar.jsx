@@ -1,146 +1,126 @@
-export const Navbar = () => { 
-    return ( 
-        <div>
-            <header class="border-b border-gray-100">
+import React, { Component } from 'react'
+
+export default class Navbar extends Component {
+  render() {
+    return (
+      <div>
+<header class="shadow-sm">
   <div
-    class="mx-auto flex h-16 max-w-screen-2xl items-center justify-between sm:px-6 lg:px-8"
+    class="mx-auto flex h-16 max-w-screen-xl items-center justify-between px-4"
   >
-    <div class="flex items-center gap-4">
-      <button type="button" class="p-2 lg:hidden">
+    <div class="flex w-0 flex-1 lg:hidden">
+      <button class="rounded-full bg-gray-100 p-2 text-gray-600" type="button">
+        <span class="sr-only">Account</span>
         <svg
-          class="h-6 w-6"
-          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
           fill="none"
-          viewBox="0 0 24 24"
           stroke="currentColor"
+          viewbox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
           <path
+            d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16"
-          />
+          ></path>
         </svg>
       </button>
+    </div>
 
-      <a href="#" class="flex">
+    <div class="flex items-center gap-4">
+      <a href="#">
         <span class="sr-only">Logo</span>
-        <span class="inline-block h-10 w-32 rounded-lg bg-gray-200"></span>
+        <span class="h-10 w-20 rounded-lg bg-gray-200"></span>
+      </a>
+
+      <form class="mb-0 hidden lg:flex">
+        <div class="relative">
+          <input
+            class="h-10 rounded-lg border-gray-200 pe-10 text-sm placeholder-gray-300 focus:z-10"
+            placeholder="Search..."
+            type="text"
+          />
+
+          <button
+            type="submit"
+            class="absolute inset-y-0 end-0 rounded-r-lg p-2 text-gray-600"
+          >
+            <span class="sr-only">Submit Search</span>
+            <svg
+              class="h-5 w-5"
+              fill="currentColor"
+              viewbox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="flex w-0 flex-1 justify-end lg:hidden">
+      <button class="rounded-full bg-gray-100 p-2 text-gray-500" type="button">
+        <span class="sr-only">Menu</span>
+        <svg
+          class="h-5 w-5"
+          fill="currentColor"
+          viewbox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+            fill-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+    </div>
+
+    <nav
+      aria-label="Global"
+      class="hidden items-center justify-center gap-8 text-sm font-medium lg:flex lg:w-0 lg:flex-1"
+    >
+      <a class="text-gray-900" href="">About</a>
+      <a class="text-gray-900" href="">Blog</a>
+      <a class="text-gray-900" href="">Projects</a>
+      <a class="text-gray-900" href="">Contact</a>
+    </nav>
+
+    <div class="hidden items-center gap-4 lg:flex">
+      <a
+        href="#"
+        class="rounded-lg bg-gray-100 px-5 py-2 text-sm font-medium text-gray-600"
+      >
+        Log in
+      </a>
+
+      <a
+        href="#"
+        class="rounded-lg bg-blue-600 px-5 py-2 text-sm font-medium text-white"
+      >
+        Sign up
       </a>
     </div>
+  </div>
 
-    <div class="flex flex-1 items-center justify-end gap-8">
-      <nav
-        aria-label="Global"
-        class="hidden lg:flex lg:gap-4 lg:text-xs lg:font-bold lg:uppercase lg:tracking-wide lg:text-gray-500"
-      >
-        <a
-          href="/about"
-          class="block h-16 border-b-4 border-transparent leading-[4rem] hover:border-current hover:text-red-700"
-        >
-          About
-        </a>
-
-        <a
-          href="/news"
-          class="block h-16 border-b-4 border-transparent leading-[4rem] hover:border-current hover:text-red-700"
-        >
-          News
-        </a>
-
-        <a
-          href="/products"
-          class="block h-16 border-b-4 border-transparent leading-[4rem] hover:border-current hover:text-red-700"
-        >
-          Products
-        </a>
-
-        <a
-          href="/contact"
-          class="block h-16 border-b-4 border-transparent leading-[4rem] hover:border-current hover:text-red-700"
-        >
-          Contact
-        </a>
-      </nav>
-
-      <div class="flex items-center">
-        <div class="flex items-center border-x border-gray-100">
-          <span class="border-e border-e-gray-100">
-            <a
-              href="/cart"
-              class="grid h-16 w-16 place-content-center border-b-4 border-transparent hover:border-red-700"
-            >
-              <svg
-                class="h-4 w-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
-                />
-              </svg>
-
-              <span class="sr-only">Cart</span>
-            </a>
-          </span>
-
-          <span class="border-e border-e-gray-100">
-            <a
-              href="/account"
-              class="grid h-16 w-16 place-content-center border-b-4 border-transparent hover:border-red-700"
-            >
-              <svg
-                class="h-4 w-4"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                />
-              </svg>
-
-              <span class="sr-only"> Account </span>
-            </a>
-          </span>
-
-          <span class="hidden sm:block">
-            <a
-              href="/search"
-              class="grid h-16 w-16 place-content-center border-b-4 border-transparent hover:border-red-700"
-            >
-              <svg
-                class="h-4 w-4"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-
-              <span class="sr-only"> Search </span>
-            </a>
-          </span>
-        </div>
-      </div>
-    </div>
+  <div class="border-t border-gray-100 lg:hidden">
+    <ul
+      class="flex items-center justify-center overflow-x-auto p-4 text-sm font-medium"
+    >
+      <li><a class="shrink-0 px-4 text-gray-900" href="">About</a></li>
+      <li><a class="shrink-0 px-4 text-gray-900" href="">Blog</a></li>
+      <li><a class="shrink-0 px-4 text-gray-900" href="">Projects</a></li>
+      <li><a class="shrink-0 px-4 text-gray-900" href="">Contact</a></li>
+    </ul>
   </div>
 </header>
-        </div>
+      </div>
     )
+  }
 }

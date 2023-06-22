@@ -1,51 +1,61 @@
-export const Footer = () => { 
-    return ( 
-        <div>
-<footer class="bg-white">
-  <div class="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8">
-    <div class="mx-auto max-w-md">
-      <strong
-        class="block text-center text-xl font-bold text-gray-900 sm:text-3xl"
+import React, { Component } from 'react'
+
+export default class Footer extends Component {
+  render() {
+    return (
+      <div>
+     <footer class="bg-white">
+  <div class="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8 lg:pt-24">
+    <div class="text-center">
+      <h2 class="text-3xl font-extrabold text-gray-900 sm:text-5xl">
+        Customise Your Product
+      </h2>
+
+      <p class="mx-auto mt-4 max-w-sm text-gray-500">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum maiores
+        ipsum eos temporibus ea nihil.
+      </p>
+
+      <a
+        href="#"
+        class="mt-8 inline-block rounded-full border border-indigo-600 px-12 py-3 text-sm font-medium text-indigo-600 hover:bg-indigo-600 hover:text-white focus:outline-none focus:ring active:bg-indigo-500"
       >
-        Want us to email you with the latest blockbuster news?
-      </strong>
-
-      <form class="mt-6">
-        <div class="relative max-w-lg">
-          <label class="sr-only" for="email"> Email </label>
-
-          <input
-            class="w-full rounded-full border-gray-200 bg-gray-100 p-4 pe-32 text-sm font-medium"
-            id="email"
-            type="email"
-            placeholder="john@doe.com"
-          />
-
-          <button
-            class="absolute end-1 top-1/2 -translate-y-1/2 rounded-full bg-blue-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-blue-700"
-          >
-            Subscribe
-          </button>
-        </div>
-      </form>
+        Get Started
+      </a>
     </div>
 
-    <div class="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-32">
-      <div class="mx-auto max-w-sm lg:max-w-none">
-        <p class="mt-4 text-center text-gray-500 lg:text-left lg:text-lg">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium
-          natus quod eveniet aut perferendis distinctio iusto repudiandae,
-          provident velit earum?
-        </p>
+    <div
+      class="mt-16 border-t border-gray-100 pt-8 sm:flex sm:items-center sm:justify-between lg:mt-24"
+    >
+      <ul class="flex flex-wrap justify-center gap-4 text-xs lg:justify-end">
+        <li>
+          <a href="#" class="text-gray-500 transition hover:opacity-75">
+            Terms & Conditions
+          </a>
+        </li>
 
-        <div class="mt-6 flex justify-center gap-4 lg:justify-start">
+        <li>
+          <a href="#" class="text-gray-500 transition hover:opacity-75">
+            Privacy Policy
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="text-gray-500 transition hover:opacity-75">
+            Cookies
+          </a>
+        </li>
+      </ul>
+
+      <ul class="mt-8 flex justify-center gap-6 sm:mt-0 lg:justify-end">
+        <li>
           <a
-            class="text-gray-700 transition hover:text-gray-700/75"
-            href=""
-            target="_blank"
+            href="/"
             rel="noreferrer"
+            target="_blank"
+            class="text-gray-700 transition hover:opacity-75"
           >
-            <span class="sr-only"> Facebook </span>
+            <span class="sr-only">Facebook</span>
 
             <svg
               class="h-6 w-6"
@@ -60,14 +70,16 @@ export const Footer = () => {
               />
             </svg>
           </a>
+        </li>
 
+        <li>
           <a
-            class="text-gray-700 transition hover:text-gray-700/75"
-            href=""
-            target="_blank"
+            href="/"
             rel="noreferrer"
+            target="_blank"
+            class="text-gray-700 transition hover:opacity-75"
           >
-            <span class="sr-only"> Instagram </span>
+            <span class="sr-only">Instagram</span>
 
             <svg
               class="h-6 w-6"
@@ -82,14 +94,16 @@ export const Footer = () => {
               />
             </svg>
           </a>
+        </li>
 
+        <li>
           <a
-            class="text-gray-700 transition hover:text-gray-700/75"
-            href=""
-            target="_blank"
+            href="/"
             rel="noreferrer"
+            target="_blank"
+            class="text-gray-700 transition hover:opacity-75"
           >
-            <span class="sr-only"> Twitter </span>
+            <span class="sr-only">Twitter</span>
 
             <svg
               class="h-6 w-6"
@@ -102,14 +116,16 @@ export const Footer = () => {
               />
             </svg>
           </a>
+        </li>
 
+        <li>
           <a
-            class="text-gray-700 transition hover:text-gray-700/75"
-            href=""
-            target="_blank"
+            href="/"
             rel="noreferrer"
+            target="_blank"
+            class="text-gray-700 transition hover:opacity-75"
           >
-            <span class="sr-only"> GitHub </span>
+            <span class="sr-only">GitHub</span>
 
             <svg
               class="h-6 w-6"
@@ -124,14 +140,16 @@ export const Footer = () => {
               />
             </svg>
           </a>
+        </li>
 
+        <li>
           <a
-            class="text-gray-700 transition hover:text-gray-700/75"
-            href=""
-            target="_blank"
+            href="/"
             rel="noreferrer"
+            target="_blank"
+            class="text-gray-700 transition hover:opacity-75"
           >
-            <span class="sr-only"> Dribbble </span>
+            <span class="sr-only">Dribbble</span>
 
             <svg
               class="h-6 w-6"
@@ -146,153 +164,12 @@ export const Footer = () => {
               />
             </svg>
           </a>
-        </div>
-      </div>
-
-      <div
-        class="grid grid-cols-1 gap-8 text-center lg:grid-cols-3 lg:text-left"
-      >
-        <div>
-          <strong class="font-medium text-gray-900"> Services </strong>
-
-          <ul class="mt-6 space-y-1">
-            <li>
-              <a
-                class="text-gray-700 transition hover:text-gray-700/75"
-                href="/"
-              >
-                Marketing
-              </a>
-            </li>
-
-            <li>
-              <a
-                class="text-gray-700 transition hover:text-gray-700/75"
-                href="/"
-              >
-                Graphic Design
-              </a>
-            </li>
-
-            <li>
-              <a
-                class="text-gray-700 transition hover:text-gray-700/75"
-                href="/"
-              >
-                App Development
-              </a>
-            </li>
-
-            <li>
-              <a
-                class="text-gray-700 transition hover:text-gray-700/75"
-                href="/"
-              >
-                Web Development
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <strong class="font-medium text-gray-900"> About </strong>
-
-          <ul class="mt-6 space-y-1">
-            <li>
-              <a
-                class="text-gray-700 transition hover:text-gray-700/75"
-                href="/"
-              >
-                About
-              </a>
-            </li>
-
-            <li>
-              <a
-                class="text-gray-700 transition hover:text-gray-700/75"
-                href="/"
-              >
-                Careers
-              </a>
-            </li>
-
-            <li>
-              <a
-                class="text-gray-700 transition hover:text-gray-700/75"
-                href="/"
-              >
-                History
-              </a>
-            </li>
-
-            <li>
-              <a
-                class="text-gray-700 transition hover:text-gray-700/75"
-                href="/"
-              >
-                Our Team
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <strong class="font-medium text-gray-900"> Support </strong>
-
-          <ul class="mt-6 space-y-1">
-            <li>
-              <a
-                class="text-gray-700 transition hover:text-gray-700/75"
-                href="/"
-              >
-                FAQs
-              </a>
-            </li>
-
-            <li>
-              <a
-                class="text-gray-700 transition hover:text-gray-700/75"
-                href="/"
-              >
-                Contact
-              </a>
-            </li>
-
-            <li>
-              <a
-                class="text-gray-700 transition hover:text-gray-700/75"
-                href="/"
-              >
-                Live Chat
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="mt-16 border-t border-gray-100 pt-8">
-      <p class="text-center text-xs/relaxed text-gray-500">
-        © Company 2022. All rights reserved.
-
-        <br />
-
-        Created with
-        <a
-          href=""
-          class="text-gray-700 underline transition hover:text-gray-700/75"
-          >Laravel</a
-        >
-        and
-        <a
-          href=""
-          class="text-gray-700 underline transition hover:text-gray-700/75"
-          >Laravel Livewire</a
-        >.
-      </p>
+        </li>
+      </ul>
     </div>
   </div>
 </footer>
-        </div>
+      </div>
     )
+  }
 }
