@@ -11,19 +11,18 @@ export default class App extends Component{
           <HomeView />
            {/* <h3>Reuseable components</h3>
            <p>we like white soup at {age}</p>
-           <div class='max-w-xl mx-auto flex flex-col gap-2 '>
+           <div class='flex flex-col gap-2 '>
               <Button 
                 text = 'click me'
-                color = 'blue'
               />
               <Button 
                 text = 'apply now'
-                color = 'red'
               />
-             
+              <Button 
+                text = 'download here'
+              />
               <Button 
               text = 'signup'
-              color = 'cyan'
               />
               <Button
               text = 'signin'
