@@ -9,7 +9,8 @@ export default class App extends Component{
     const age = 34;
      return(
         <div>
-          {/* <HomeView /> */}
+        
+          <HomeView />
            {/* <h3>Reuseable components</h3>
            <p>we like white soup at {age}</p>
            <div class='max-w-lg mx-auto flex flex-col gap-2 '>
@@ -39,7 +40,7 @@ export default class App extends Component{
             <Lol />
            </div> */}
 
-           <EventListener />
+           {/* <EventListener /> */}
         </div>
        
      )
