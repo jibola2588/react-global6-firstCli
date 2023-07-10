@@ -23,10 +23,10 @@ export default class HomeView extends Component {
     return (
       <div>
         {/* { this.state.showComponent && <Counter/>} */}
-        {/* {/* <Navbar/> */}
-        // <Section/>
-        // <Footer/> */}
-        {/* {/* {/* <button  className='bg-red-600 text-white text-sm px-4 py-2' onClick={this.hideComponent}>Hide Component</button> */} */} */}
+        {/*<Navbar/> */}
+        {/* // <Section/> */}
+        {/* // <Footer/>  */}
+        {/* <button  className='bg-red-600 text-white text-sm px-4 py-2' onClick={this.hideComponent}>Hide Component</button> */} 
 
 
         {/* <StyledComponent/> */}
